@@ -19,9 +19,9 @@ getrstTaxRate.addEventListener("change", () => {
 });
 
 function updateDisplay() {
-    displaytotalBeforeTax.innerText = `Price before Tax: $${rstPriceWithTax}`;
+    displayrstTotal.innerText = `Total Amount: $${rstPriceWithTax}`;
     displaytaxedAmount.innerText = `Sales Tax: ${rstTaxRate}%`;
-    displayrstTotal.innerText =`Total Amount: $${listPrice}`;
+    displaytotalBeforeTax.innerText = `Price before Tax: $${listPrice}`;
 }
 
 function calculateReverseSalesTax(totalPrice, salesTax) {

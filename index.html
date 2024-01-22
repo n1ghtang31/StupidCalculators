@@ -3,34 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Stupid Calculators</title>
 </head>
 <body>
 <div id="wrapper">
-    <div id="rstCalculator">    
-        <h1>Reverse Sales Tax Calculator</h1>
-        <form action="">
-            <label for="rstPriceWithTax">Price of the Item with Tax $:</label>
-            <input type="number" name="rstPriceWithTax" id="rstPriceWithTax" placeholder="Price">
-            <label for="rstTaxRate">Sales tax: %</label>
-            <input type="number" name="rstTaxRate" id="rstTaxRate" placeholder="Tax % Rate">
-        </form>
-
-        <button type="submit" id="calculateRSTButton" onclick="calculateReverseSalesTax(rstPriceWithTax, rstTaxRate)">Calculate</button>
+    <div class="header">
+        <h1>Stupid Calculators</h1>
+        <h3>Calculators that shouldn't be needed in the first place</h3>
     </div>
-    <div id="rstResponse">
-        <div id="totalBeforeTax">
-            Price before tax: $0.00
-        </div>
-        <div id="taxedAmount">
-            Sales Tax: 0% 
-        </div>
-        <div id="rstTotal">
-            Total Amount: $0.00
-        </div>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reverseSalesTax.html">Reverse Sales Tax</a></li>
+            </ul>
+        </nav>
     </div>
-
-</div>
     <script src="index.js"></script>
 </body>
 </html>
